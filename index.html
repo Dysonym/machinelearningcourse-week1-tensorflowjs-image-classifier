@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homework week 1</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- *** Import TensorFlow.js *** -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <!-- *** Import tfjs-vis *** -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <!-- German Shepskylab = German Shepherd Dog/Siberian Husky cross + Labrador? -->
+    <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227" />
+
+
+  <!-- 
+    <p>
+        <video crossorigin id="video" autoplay loop controls preload="metadata" width="320px" height="176px">
+            <source src="https://cdn.glitch.com/9c85565c-20cb-43a8-bfe2-3f36f962abb0%2Fmov_bbb.mp4?v=1567134426948"
+                type="video/mp4" /> 
+            Video not supported.
+        </video>
+    </p>
+    <p>
+        Video courtesy of
+        <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+        <p> (c) copyright 2008, Blender Foundation / www.bigbuckbunny.org </p>
+        
+    </p>
+ -->
+  
+    <p>
+      <video autoplay playsinline muted id="video" width="224" height="224"></video>
+    </p>
+  <button class="class-a">Thumbs UP</button>
+  <button id="class-b">Peace</button>
+  <button id="class-c">Finger</button>
+  <button id="class-d">No Action</button>
+
+    <div id="console"></div>
+
+
+
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+</body>
+
+</html>
