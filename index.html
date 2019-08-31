@@ -21,7 +21,16 @@
 
 <body>
     <!-- German Shepskylab = German Shepherd Dog/Siberian Husky cross + Labrador? -->
-    <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227" />
+  
+    <div class="border_div">
+      <h1>
+      Classifying an Image Using Mobinet
+      </h1>
+      <img id="img" crossorigin src="https://i.imgur.com/JlUvsxa.jpg" width="227" height="227" />
+      <p id="dog_prediction">
+        ...
+      </p>
+  </div>
 
 
   <!-- 
@@ -39,16 +48,21 @@
         
     </p>
  -->
-  
+  <div class="border_div">
+    <h1>
+      Training a Classifier to Recognize Some Hand Signs Using a Webcam
+    </h1>
     <p>
       <video autoplay playsinline muted id="video" width="224" height="224"></video>
     </p>
-  <button class="class-a">Thumbs UP</button>
-  <button id="class-b">Peace</button>
-  <button id="class-c">Finger</button>
-  <button id="class-d">No Action</button>
+    <button class="class-a">Thumbs UP</button>
+    <button id="class-b">Peace</button>
+    <button id="class-c">Finger</button>
+    <button id="class-d">No Action</button>
 
     <div id="console"></div>
+    
+  </div>
 
 
 

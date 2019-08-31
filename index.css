@@ -9,3 +9,7 @@ h1 {
     font-style: italic;
     color: #373fff;
 }
+
+.border_div {
+  border: 3px solid black
+}

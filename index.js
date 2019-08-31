@@ -43,7 +43,9 @@ async function app() {
   // Make a prediction through the model on our image.
 
   const result = await net.classify(imgEl);
-  console.log(result);
+  console.log(JSON.stringify(result));
+  console.log(document.getElementById('dog_prediction'));
+  document.getElementById('dog_prediction').innerText = JSON.stringify(result, null, 2);
   
   // Reads an image from the webcam and associates it with a specific class
   // index.
@@ -84,10 +86,10 @@ async function app() {
       // Get the most likely class and confidences from the classifier module.
       const result = await classifier.predictClass(activation);
       
-      //console.log(result);
+      console.log(result);
       document.getElementById('console').innerText = `
         prediction: ${result.label}\n
-        probability: ${result.confidences[result.classIndex]}
+        probability: ${result.confidences[result.label]}
       `;
     }
 
